@@ -1,0 +1,539 @@
+/* 公共样式 */
+/* 版芯 */
+.content-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 清除浮动 */
+.clear-fix::before,
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* 头部部分 */
+.header {
+    /* background-color: #ff0; */
+}
+
+/* logo */
+.header .logo {
+    float: left;
+    width: 192px;
+    padding: 39px 0 29px;
+}
+
+/* 功能区 */
+.header .tools {
+    float: right;
+    padding: 35px 0 29px;
+}
+
+.tools .tel {
+    margin-bottom: 10px;
+}
+
+.tools .tel .tel-image {
+    height: 24px;
+    margin-right: 20px;
+}
+
+.tools .tel .tel-num {
+    font-size: 20px;
+    color: #00978E;
+}
+
+.tools .tel .icon {
+    width: 24px;
+    margin-left: 10px;
+}
+
+.tools .search {
+    width: 266px;
+    height: 30px;
+    border: 1px solid rgba(202, 202, 202, 0.60);
+}
+
+.tools .search input {
+    width: 95px;
+    height: 21px;
+    margin: 5px 125px 4px 19px;
+    border: none;
+    color: #cacaca;
+    opacity: .6;
+    /* 取消轮廓线 */
+    outline: none;
+}
+
+/* 添加放大镜的字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.woff2') format('woff2'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype');
+}
+
+/* 字体图标的样式 */
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 20px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #ccc;
+    padding: 5px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* 轮播图及导航栏部分 */
+.banner {
+    /* background-color: #ff0; */
+}
+
+/* 导航栏部分 */
+.banner .head-nav {
+    background-color: #00978E;
+}
+
+.head-nav a {
+    display: block;
+    width: 150px;
+    height: 60px;
+    float: left;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+}
+
+.head-nav a:hover {
+    background-color: #015e58;
+}
+
+/* 轮播图部分 */
+.banner .banner-box {
+    position: relative;
+}
+
+.banner .banner-box .banner-image {
+    width: 1920px;
+    margin: 0 auto;
+    display: block;
+}
+
+.banner .banner-box .banner-tools {
+    height: 570px;
+    /* background-color: #f00; */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-tools .fonts {
+    position: absolute;
+    top: 132px;
+    left: 148px;
+    font-size: 40px;
+    color: #015E58;
+
+}
+
+.banner-tools .fonts h2 {
+    font-weight: 500;
+}
+
+.banner-tools .icon {
+    position: absolute;
+    top: 50%;
+    /* width: 56px; */
+    transform: translateY(-50%);
+}
+
+.banner-tools .icon img {
+    width: 56px;
+    display: block;
+}
+
+.banner-tools .icon img:last-child {
+    display: none;
+}
+
+/* 左箭头 */
+.banner-tools .pre {
+    left: 0;
+}
+
+.banner-tools .icon:hover img:first-child {
+    display: none;
+}
+
+.banner-tools .icon:hover img:last-child {
+    display: block;
+}
+
+/* 右箭头 */
+.banner-tools .next {
+    right: 0;
+}
+
+/* 小圆点 */
+.banner-tools .banner-point {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+}
+
+
+/* 主体部分 */
+
+/* 图文引导部分 */
+.main {
+    /* background-color: pink; */
+}
+
+.main .font-image {
+    /* background-color: #ff0; */
+    padding: 71px 0 56px;
+    width: 906px;
+    margin: 0 auto;
+}
+
+.main .font-image div {
+    float: left;
+    margin-right: 54px;
+    text-align: center;
+}
+
+.main .font-image div:last-child {
+    margin-right: 0;
+}
+
+.main .font-image div img {
+    width: 106px;
+    margin-bottom: 15px;
+}
+
+.main .news .hospital-dynamics {
+    float: left;
+}
+
+.main .news .title {
+    /* background-color: #ff0; */
+    margin-bottom: 27px;
+}
+
+/* 公共样式  标题部分 */
+.news .title h3 {
+    font-size: 16px;
+    float: left;
+    padding: 2px 0;
+}
+
+/* 标题前面的绿色小方块 */
+.news .title h3::before {
+    content: "";
+    float: left;
+    width: 8px;
+    height: 20px;
+    background-color: #00978E;
+    margin-right: 6px;
+}
+
+/* 新闻内容部分 */
+.news .hospital-dynamics .hospital-news {
+    width: 800px;
+}
+
+/* 左边的图片区域 */
+.hospital-news .news-image {
+    float: left;
+    position: relative;
+}
+
+.hospital-news .news-image img {
+    width: 422px;
+    display: block;
+}
+
+.hospital-news .news-image .link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 422px;
+    height: 40px;
+    background-color: rgba(8, 8, 8, .4);
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* 右边的新闻列表区域 */
+.hospital-news ul {
+    float: right;
+    font-size: 14px;
+}
+
+.hospital-news ul li {
+    width: 360px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 5px;
+}
+
+.hospital-news ul li a {
+    color: #000;
+    float: left;
+}
+
+.hospital-news ul li a:hover {
+    color: #00978E;
+}
+
+.hospital-news ul li span {
+    float: right;
+}
+
+/* 医院公告 */
+.main .news .hospital-notice {
+    float: left;
+    margin-left: 40px;
+}
+
+/* 清除浮动 */
+.hospital-notice li {
+    overflow: hidden;
+    margin-bottom: 14px;
+    width: 323px;
+}
+
+/* 让带数字的方块左浮动 */
+.hospital-notice li .list-num {
+    width: 53px;
+    height: 57px;
+    background-color: #00978e;
+    float: left;
+    font-size: 30px;
+    color: #fff;
+    line-height: 57px;
+    text-align: center;
+    margin-right: 16px;
+}
+
+.hospital-notice li .content a {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+/* 中间的大广告 */
+.ad {
+    width: 1200px;
+    margin-top: 6px;
+    margin-bottom: 28px;
+}
+
+/* 科室介绍 */
+.main .department {
+    /* background-color: #ff0; */
+    width: 100%;
+    background-color: #fafafa;
+    overflow: hidden;
+}
+
+.main .department .content-width {
+    padding: 36px 0 48px 0;
+}
+
+/* 标题 */
+.head-title {
+    /* background-color: #f00; */
+    margin-bottom: 20px;
+}
+
+.head-title h3 {
+    font-size: 16px;
+    float: left;
+    padding: 2px 0;
+}
+
+.head-title h3::before {
+    content: "";
+    float: left;
+    width: 8px;
+    height: 20px;
+    background-color: #00978E;
+    margin-right: 6px;
+}
+
+.head-title a {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    padding: 3px 0;
+}
+
+/* 科室 */
+.department .part>div {
+    float: left;
+    width: 263px;
+    /* background-color: #0ff; */
+    margin-left: 37px;
+}
+
+.part>div h4 {
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.part>div h4::before,
+.part>div h4::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #00978e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.part>div h4::before {
+    left: 20%;
+}
+
+.part>div h4::after {
+    right: 20%;
+}
+
+/* 科室详细分类 */
+.part>div ul li {
+    float: left;
+    border: 1px solid #aaa9a9;
+    border-radius: 5px;
+    width: 118px;
+    height: 34px;
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.part>div ul li:nth-child(odd) {
+    margin-right: 21px;
+}
+
+.part>div ul li a {
+    font-size: 14px;
+    color: #000;
+}
+
+.part>div ul li:hover a {
+    color: #00978e;
+}
+
+
+/* 专家介绍部分 */
+.main .experts {
+    padding: 60px 0 24px 0;
+}
+
+.experts .head-title {
+    margin-bottom: 20px;
+}
+
+.experts ul li {
+    float: left;
+    overflow: hidden;
+    margin: 0 17px 58px 0;
+}
+
+.experts ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/* 以后用的时候要写成 n+4 这样的形式  否则失效 */
+.experts ul li:nth-child(n+4) {
+    margin-bottom: 25px;
+}
+
+
+.experts ul li img {
+    height: 190px;
+    float: left;
+    margin-right: 12.5px;
+}
+
+.experts ul li div {
+    float: left;
+    width: 224px;
+}
+
+.experts ul li div p {
+    font-size: 14px;
+    height: 27px;
+    line-height: 27px;
+}
+
+
+/* 页脚部分 */
+.footer {
+    background-color: #fafafa;
+    height: 395px;
+}
+
+.footer .content-width {
+    padding-top: 67px;
+}
+
+/* 友情链接部分 */
+.footer h4 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footer .links h4 {
+    margin-bottom: 20px;
+}
+
+.footer .links a {
+    float: left;
+    width: 150px;
+    color: #000;
+}
+
+.footer .links a:nth-of-type(1) {
+    margin-left: 30px;
+}
+
+/* 联系方式部分 */
+.footer .address h4 {
+    margin: 30px 0 18px;
+}
+
+.footer .address ul li {
+    float: left;
+}
+
+.address ul li:nth-child(2) {
+    margin-left: 33px;
+}
+
+.address ul li:nth-child(3) {
+    margin-left: 55px;
+}
+
+.address ul li p {
+    margin-bottom: 20px;
+}
