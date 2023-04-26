@@ -1,0 +1,18 @@
+/* 基础公共样式 */
+
+/* 清除默认间距 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 清除超链接默认样式 */
+
+a {
+    text-decoration: none;
+}
+
+/* 清除列表标签默认样式 */
+ul {
+    list-style: none;
+}

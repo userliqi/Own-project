@@ -1,0 +1,241 @@
+/* 版芯设置 */
+.common-width {
+    width: 1200px;
+    /* 盒子居中 */
+    margin: 0 auto;
+}
+
+/* 清除浮动   双伪元素清除法 */
+/* 伪元素默认是行内元素，需要转换为块级元素 */
+.clearfix::before,
+.clearfix::after {
+    /* 必须添加content属性，否则起不到任何作用 */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+/* 头部导航区样式 */
+.header {
+    width: 100%;
+    background-color: #2b303b;
+}
+
+/* logo */
+.header .logo {
+    float: left;
+    margin-top: 11px;
+}
+
+/* 头部导航栏 */
+.header .nav {
+    float: right;
+}
+
+.header .nav li {
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+.header .nav li a {
+    color: #fff;
+    margin: 0 8px;
+}
+
+
+/* 轮播图区域样式 */
+.banner {
+    width: 100%;
+    background-color: #181c28;
+}
+
+/* 子绝父相 */
+/* 给大盒子添加相对定位 */
+.banner .common-width {
+    position: relative;
+}
+
+/* 给侧边导航栏添加绝对定位，定位到banner区域大盒子的左边 */
+.common-width .side-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1b2a3f;
+}
+
+.side-nav ul {
+    width: 251px;
+    padding: 34px 0 30px;
+}
+
+.side-nav ul li a {
+    display: block;
+    padding: 10px 21px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.side-nav ul li:first-child a {
+    padding-top: 0;
+}
+
+.side-nav ul li:last-child a {
+    padding-bottom: 0;
+}
+
+.side-nav ul li a span:first-child {
+    float: left;
+}
+
+/* 添加大于号的字体图标 */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+}
+
+/* 让字体图标浮动到右边 */
+.side-nav ul li a .iconfont {
+    float: right;
+}
+
+
+
+/* 主体内容区域 */
+
+/* 标题部分 */
+.main {
+    padding: 42px 0 138px;
+}
+
+.main_title {
+    text-align: center;
+}
+
+.main_title h2 {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.main_title h4 {
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+
+/* 在线课程图文部分 */
+.online-courses {
+    margin: 0;
+    border: 1px solid #ccc;
+    /* 圆角边框 */
+    border-radius: 10px;
+    padding-top: 43px;
+}
+
+/* 内容部分  浮动到左边 */
+.online-courses .left-content {
+    float: left;
+    margin-left: 50px;
+    width: 443px;
+}
+
+/* 图片部分 浮动到右边 */
+.online-courses .right-image {
+    float: right;
+    width: 580px;
+    margin: 0 53px 72px 0;
+}
+
+.left-content h3 {
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    width: 125px;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    width: 443px;
+    font-size: 14px;
+    color: #666;
+    line-height: 28px;
+}
+
+.left-content button {
+    border: 1px solid #ffa500;
+    width: 160px;
+    height: 48px;
+    background-color: #fff;
+    font-size: 18px;
+    margin-top: 28px;
+}
+
+
+/* 页脚部分 */
+.footer {
+    width: 100%;
+    height: 400px;
+    background-color: #2e3033;
+    color: #fff;
+}
+
+.footer .common-width {
+    padding-top: 30px;
+}
+
+.footer dl {
+    float: left;
+}
+
+.footer dl {
+    margin-right: 100px;
+}
+
+.footer dl dt {
+    margin-bottom: 14px;
+}
+
+.footer dl dd {
+    font-size: 14px;
+    padding: 5px 0;
+    color: #ccc;
+}
+
+.footer ul {
+    float: right;
+    width: 190px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer ul li {
+    margin: 5px 0;
+}
+
+.footer ul li:last-child {
+    margin-top: 20px;
+}
+
+.footer ul li button {
+    width: 190px;
+    height: 35px;
+    background-color: #00a4ff;
+    color: #fff;
+    border: none;
+}
